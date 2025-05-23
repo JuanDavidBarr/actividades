@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name ="viewport" content = "width=device-width, initial-scale=1.0">
+        <title>My personal portfolio</title>
+        <meta charset="description" content="Personal portfolio of Juan David Barrera Patiño as a Riwi developper">
+        <link rel="stylesheet" href="Style.css">
+    </head>
+    <body>
+        <h1>Juan David Barrera Patiño - Riwi developper</h1>
+            <nav>
+                <a href="#about_me">About me</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </section>
+        <section id="about_me">
+            <h2>About me</h2>
+            <p>My name is Juan David Barera Patiño. I am 28 years old, I am from Colombia and I live in Bello, Antioquia</p>
+            <p>I have a bachelor degree in language teaching, however, currently I am studying to become a developper</p>
+            <p>I am really into languages, tv shows and movies, working out and reading. I also enjoy learning new things; for that reason I am trying to learn how to code. So far it has been amazing, tough a bit challenging</p>
+        </section>
+        <img src="profile_pic.webp" al="Profile picture" width="200"> </img>
+        <h2>Skills</h2>
+        <ul id="skills">
+            <li>English (advance)</li>
+            <li>French (intermediate)</li>
+            <li>FLE and EFL teacher</li>
+            <li>Coding fundamentals</li>
+            <li>Python (basic)</li>
+        </ul>
+        <section id="projects">
+            <h2>Projects</h2>
+            <h3>Project 1: Portfolio website</h3>
+            <p>Basic website with my personal information and the projects I have done so far</p>
+            <img src ="Project_1.png" al="Project 1 picture" width="500"> </img>
+            <table>
+                <tr>
+                    <th>Nombre del proyecto</th>
+                    <th>Tecnologías usadas</th>
+                    <th>Enlace</th>
+                </tr>
+                <tr>
+                    <td>Portfolio website</td>
+                    <td>HTML and CSS</td>
+                    <td><a href="#">View project</a></td>
+                </tr>
+            </table>
+        </section>
+        <br>
+        <br>
+        <section id="contact">
+            <form action="/send" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email">Email</label>   
+                <input type="email" id="email" name="email" required><br>
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <input type="submit" value="send">
+            </form>
+            <h3>Redes sociales</h3>
+            <a href="https://github.com/JuanDavidBarr" target="_blank">Github</a>
+        </section>
+    </body>
+
+</html>

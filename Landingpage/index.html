@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiesta de clásicos</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/dc33c0c841.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+
+            <div class="header__logo">
+
+                <img class="logo__image" src="Icon.svg" alt="Logo">
+                <p class="logo__name">Soul Sound</p>
+
+            </div>
+
+            <nav class="header__navbar">
+
+                <a class="navbar__link" href="">Eventos</a>
+                <a class="navbar__link" href="">Música</a>
+                <a class="navbar__link" href="">Revista</a>
+
+            </nav>
+
+            <div class="header__login">
+
+                <p class="login__paragraph">Login</p>
+
+            </div>
+
+    </header>
+
+    <main>
+
+        <section class="section-hero_and_form">
+
+            <article class="article-hero">
+
+                <div class="article-hero__text">
+
+                    <h1 class="text__lineas">La guerra de clásicos está aquí</h1>
+                    <h2 class="text__lineas">!No te la pierdas!</h2>
+                    <h3 class="text__lineas  lineas--last">Reserva tu entrada</h3>
+
+                </div>
+
+            </article>
+
+
+            <article class="article-form">
+
+                <div class="article-form__container">
+
+                    <h2 class="container__heading">Adquiere tus entradas</h2>
+
+                </div>
+                
+                <div class="article-form__container">
+
+                    <form class="container__form"> 
+
+                        <div class="form__container container--flex">
+
+                            <div class="container__input-label">
+
+                                <label class="input-label__label" for="name">Nombre</label>
+                                <input class="input-label__input" type="text" id="name" name="name">
+
+                            </div>
+
+                            <div class="container__input-label">
+
+                                <label class="input-label__label" for="number">Celular</label>
+                                <input class="input-label__input" type="tel" id="number" name="number">
+
+                            </div>
+                        </div>
+
+                        <div class="form__container  container--flex">
+
+                            <div class="container__input-label">
+
+                                <label class="input-label__label" for="correo">Correo electrónico</label>
+                                <input class="input-label__input input--invalid_and_exit" type="email" id="correo" name="correo">
+
+                            </div>
+
+                            <div class="container__input-label">
+
+                                <label class="input-label__label" for="tipo_entrada">Tipo de entrada</label>
+                                <select class="input-label__input  input-label__input--widht" name="tipo_entrada" id="tipo_entrada">
+                                    <option value="general">General</option>
+                                    <option value="platino">Platino</option>
+                                    <option value="vip">VIP</option>
+                                    <option value="palcos">Palcos</option>
+                                </select>
+
+                            </div>
+
+                        </div>
+                        
+                        <div class="form__container">
+
+                            <input class="container_input input--button" type="submit" value="Enviar">
+
+                        </div>    
+                    </form> 
+                
+                </div>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="heading-container">
+            <h4> <i class="fa-solid fa-copyright"></i> 2025 Soul Sound: Music for the soul. Derechos reservados</h4>
+        </div>
+
+    </footer>
+</body>
+</html>

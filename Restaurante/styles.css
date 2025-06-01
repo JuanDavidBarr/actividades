@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-color:white;
+    --secondary-color:#81A4CD;
+    --header-color:#DBE4EE;
+    --main-font:"Nunito", sans-serif;
+}
+body{
+    background-color: var(--main-color);
+}
+
+header{
+    background-color: var(--header-color);
+}
+
+h1{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: var(--main-font);
+}
+
+h2{
+    text-align: center;
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: var(--secondary-color);
+    font-family: var(--main-font);
+}
+
+h3{
+    font-family: var(--main-font);
+}
+
+h4{
+    text-align: center;
+    font-family: var(--main-font);
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    border: 1px solid;
+    border-radius: 25px;
+    font-family: var(--main-font);
+    font-weight: bold;
+}
+
+.navbar__link{
+    margin: 20px;
+    text-align: center;
+    text-decoration: none;
+    color:black;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (width <= 400px){
+    .container{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+    .container__product{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar{
+        display: flex;
+        flex-flow: column;
+    }
+
+}
+
+
+.container__product{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 10px 10px 5px var(--header-color);
+    width: 100%;
+}
+
+.product__heading{
+    text-align: center;
+}
+
+.product__image{
+   width: 100px;
+   height: 100px;
+}
+
+.product__description{
+    text-align: center;
+    font-family: var(--main-font);
+    font-style: italic;
+}
+
+.product__price{
+    font-family: var(--main-font);
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+footer{
+    margin-top: 40px;
+    background-color: var(--header-color);
+}
+
+.navbar--footer{
+    display: flex;
+    justify-content: center;
+}
+.navbar--footer__link{
+    margin: 20px;
+    text-align: center;
+    text-decoration: none;
+    color:black;
+}
+
+
+
+
+
+
+
+
+
+

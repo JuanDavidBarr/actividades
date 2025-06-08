@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header, .navbar, .main, .footer, .aside{
+    border: 1px solid black;
+}
+
+.grid-container{
+    display: grid;
+    height: 100vh;
+    padding: 1rem;
+    gap: 1rem;
+    grid-template:
+        "header navbar" 5rem
+        "main aside" auto
+        "footer footer" 5rem/
+        auto 30rem
+}
+
+
+.header{
+    grid-area: header;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding-left: 1rem;
+}
+.header__logo{
+    object-fit:contain;
+}
+.header__text{
+   align-self: center;
+}
+
+
+.navbar{
+    grid-area: navbar;
+}
+.navbar__container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    height: 100%;
+}
+.container__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    text-align: center;
+    height: 100%;
+}
+.item__link{
+    height: 100%;
+    align-content: center;
+    flex-grow: 1;
+    text-decoration: none;
+    color: black;
+}
+.item__link:hover{
+    background-color: gray;
+    color: aliceblue;
+}
+
+
+.main{
+    grid-area: main;
+}
+.main__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 20rem;
+    gap: 1rem;
+}
+.container__cards{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    align-items: center;
+}
+.cards__image{
+    width: 100%;
+    height: 10rem;
+    object-fit: contain;
+}
+.cards__text{
+    width: 15rem;
+    text-align: center;
+}
+
+
+.aside{
+    grid-area: aside;
+}
+.aside__form{
+    display: grid;
+    gap: 1rem;
+    grid-template:
+        "name lastname"
+        "date email"
+        "id id"
+        "paper paper"
+        "description description"
+        "upload upload";
+}
+.form__container{
+    display: flex;
+    flex-direction: column;
+}
+.form__container-name{grid-area: name;}
+.form__container-lastname{grid-area: lastname;}
+.form__container-date{grid-area: date;}
+.form__container-email{grid-area: email;}
+.form__container-id{grid-area: id;}
+.form__container-paper{grid-area: paper;}
+.form__container-description{grid-area: description;}
+.form__container-upload{grid-area: upload;}
+
+.footer{
+    grid-area: footer;
+    height: 5rem;
+}
+
+@media (max-width:768px){
+    .grid-container{
+    display: grid;
+    height: 100vh;
+    padding: 0;
+    gap: 1rem;
+    grid-template:
+        "header" 5rem
+        "navbar" 3rem
+        "main" auto
+        "aside" auto
+        "footer" 10rem;
+    }
+    .aside{
+        height: 30rem;
+    }
+    .aside__form{
+        display: grid;
+        gap: 1rem;
+        grid-template:
+            "name lastname"
+            "date email"
+            "id id"
+            "paper paper"
+            "description description"
+            "upload upload";
+    }
+}
